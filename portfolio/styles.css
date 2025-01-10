@@ -1,0 +1,195 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background: #f7f7f7; /* Light background for overall readability */
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  /* Header Section */
+  header {
+    background: linear-gradient(to right, #ffecd2, #ff9b8f); /* Soft peach-to-pink gradient */
+    color: white;
+    padding: 80px 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  }
+  
+  .typing-animation {
+    font-size: 3rem;
+    font-weight: bold;
+    background: linear-gradient(to right, #ff7eb3, #ff758c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    animation: typing 4s steps(40, end), blink 0.5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid #fff;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  @keyframes blink {
+    from {
+      border-color: transparent;
+    }
+    to {
+      border-color: white;
+    }
+  }
+  
+  /* About Section */
+  .about-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 60px 0;
+    background: linear-gradient(135deg, #a8c0ff, #3f2b96); /* Soft blue gradient */
+    color: white;
+  }
+  
+  .profile-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .about-text {
+    max-width: 600px;
+    text-align: left;
+    padding: 0 20px;
+  }
+  
+  /* Skills Section */
+  .gradient-bg {
+    background: linear-gradient(135deg, #f6d365, #fda085); /* Soft yellow-orange gradient */
+    color: white;
+    padding: 40px 0;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .skill-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .skill {
+    background: #fff;
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    transition: transform 0.3s, box-shadow 0.3s;
+    color: #333;
+    border: 2px solid #fda085;
+  }
+  
+  .skill.glowing:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #fda085, 0 0 25px #f6d365;
+  }
+  
+  /* Internship Section */
+  #internship {
+    background: linear-gradient(to right, #ffeecb, #ffb3ba); /* Soft pink-orange gradient */
+    color: #333;
+    padding: 60px 20px;
+  }
+  
+  #internship p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+  
+  /* Projects Section */
+  .project-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    padding: 40px 0;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4); /* Light pink gradient */
+    color: white;
+  }
+  
+  .card {
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+    padding: 20px;
+    border-radius: 10px;
+    color: #333;
+    max-width: 500px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: left;
+    backdrop-filter: blur(5px);
+  }
+  
+  .card.glowing:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #ff9a9e, 0 0 25px #fad0c4;
+  }
+  
+  /* Contact Section */
+  #contact {
+    background: linear-gradient(135deg, #d4fc79, #96e6a1); /* Soft green gradient */
+    color: #333;
+    padding: 60px 20px;
+  }
+  
+  #contact a {
+    color: #ff7eb3;
+    text-decoration: none;
+  }
+  
+  #contact a:hover {
+    text-decoration: underline;
+  }
+  
+  #contact p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+  
+  /* Footer */
+  footer {
+    background: #f6f6f6;
+    color: #333;
+    padding: 20px 0;
+    box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Fixing Overflow Issues */
+  .section {
+    padding: 40px 0;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Adding Default Box Sizing */
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+  
