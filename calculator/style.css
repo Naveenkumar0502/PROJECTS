@@ -1,0 +1,55 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #e0e0e0;
+    font-family: 'Arial', sans-serif;
+}
+
+.calculator {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    width: 300px;
+}
+
+#display {
+    width: 100%;
+    height: 60px;
+    text-align: right;
+    font-size: 24px;
+    border: none;
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.btn {
+    padding: 20px;
+    font-size: 18px;
+    border: none;
+    background-color: #f1f1f1;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #d1d1d1;
+}
+
+.zero {
+    grid-column: span 2; /* Make the zero button wider */
+}
+
+.equal {
+    background-color: #4CAF50; /* Green for equal button */
+    color: white;
+}
+
+.equal:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
